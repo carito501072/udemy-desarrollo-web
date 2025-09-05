@@ -1,22 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="javascript.js">
+    <title>Pagina web cursos</title>
 </head>
 <body>
-    <header>
-        <p><h1>Este es un sitio web</h1></p>        
-    </header>
-    <main>
+<header>
+    <nav class="nav">
+       <ul>
+          <li><a href="#title" target="_blank">Inicio</a></li>
+          <li><a href="#skills" target="_blank">Habilidades</a></li>
+          <li><a href="#contacto.html" target="_blank">Informacion</a></li>
+      </ul>
+    </nav>
+</header>
+<main>
+  <h1 id="title">Curso de Html, Css y Javascript</h1>
+</main>
+<div id="home" class="home">
+  <div id="home1">
+    <h3 class="divhome">¿A quien va dirigido?</h3>
+    <article>
+      <p class="contenido">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+        Click aqui para descargar malla curricular 
+      <a class="cronograma" href="DESARROLLO DE APLICACIONES FULL STACK JAVA TRAINEE 12122024.pdf" upload="cronograma">Malla</a>
+    </article>
+  </div>
+  <div id="home2">
+    <h3 class="divhome" id="skills">Habilidades que se aprenderan</h3>
+    <ul class="divhome">
+      <li class="divhome item1">Creacion basica de un sitio web</li>
+      <li class="divhome item2">Disenio basico</li>
+      <li class="divhome item3">Elementos de javascript</li>
+    </ul>
+  </div>
+</div>
+<h3 class="learning" id="learning">Temario</h3>
+<ol>
+  <div id="modelo">    
+    <figure>      
+      <li>HTML</li>
+      <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">
+        <img src="html.svg" alt="logo html">
+      </a>
+      <figcaption>HiperText Markup Language</figcaption>
+    </figure>
+    <!--  -->    
+    <figure>
+      <li class="li">CSS</li>
+      <a href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+        <img src="css.svg" alt="logo html">
+      </a>
+      <figcaption>Cascading Style Sheets</figcaption>    
+    </figure>    
+    <figure>
+      <li>JS</li>
+      <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">
+        <img src="javascript.svg" alt="logo html">
+      </a>
+      <figcaption>JS</figcaption>    
+    </figure>    
+  </div>
+</ol>
+<footer>
+  <form id="formulario" action="#" method="post">
+    <h2>¡Quiero informacion del curso!</h2>
+    <label for="nombre">Nombre del interesado(a)</label>
+    <input class="inputs" id="nombre" type="text" name="nombre" placeholder="Jane Doe" required required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras">
+    <label for="correo">Correo del interesado(a)</label>
+    <input class="inputs" id="email" type="email" name="correo" placeholder="correo@ejemplo.com" required>
+    <!-- <label>Telefono</label>
+    <input type="tel" name="telefono" placeholder="+5691232323" required> -->
+    <label for="comentarios">Comente aca brevemente que le gustaria saber</label>
+    <textarea class="inputs" id="comentarios" type="text" name="comentarios" placeholder="Tengo interes en..."></textarea>
+    <input id="inputbuttom" type="submit" value="Enviar">
+    <!-- <a href="https://cursos.databoosters.mx/"><h4 ></h4></a>     -->
+  </form>   
+</footer>
 
-    </main>
-    <aside>
-
-    </aside>
-    <footer>
-
-    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
